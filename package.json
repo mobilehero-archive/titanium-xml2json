@@ -44,6 +44,9 @@
 		"iphone",
 		"ipad",
 		"modules",
+		"xmltojson",
+		"xml",
+		"json",
 		"brentonhouse"
 	]
 }
