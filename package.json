@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Titanium native mobile module for converting XML to JSON",
 	"main": "xml2json.js",
 	"scripts": {
@@ -11,11 +11,11 @@
 	"author": "metatribal",
 	"maintainers": [
 		{
-		  "name": "Brenton House",
-		  "email": "brenton.house@gmail.com",
-		  "url": "https://brenton.house"
+			"name": "Brenton House",
+			"email": "brenton.house@gmail.com",
+			"url": "https://brenton.house"
 		}
-	  ],
+	],
 	"repository": {
 		"type": "git",
 		"url": "github:brentonhouse/titanium-xml2json"
@@ -28,9 +28,7 @@
 		"eslint-plugin-jsdoc": "^7.2.3",
 		"eslint-plugin-promise": "^4.1.1"
 	},
-	"dependencies": {
-		"fs-extra": "^8.0.1"
-	},
+	"dependencies": {},
 	"keywords": [
 		"titanium",
 		"mobile",
