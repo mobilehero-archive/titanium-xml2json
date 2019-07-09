@@ -152,7 +152,7 @@ results in
 
 ## 📣 Feedback
 
-Have an idea or a comment?  [Join in the conversation here](https://github.com/brentonhouse/titanium-module-copier/issues)! 
+Have an idea or a comment?  [Join in the conversation here](https://github.com/brentonhouse/xml2json/issues)! 
 
 ## ©️ Legal
 
