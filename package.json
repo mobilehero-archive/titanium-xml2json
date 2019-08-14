@@ -1,7 +1,7 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "0.0.4",
-	"description": "Titanium native mobile module for converting XML to JSON",
+	"version": "0.0.6",
+	"description": "Titanium module for converting XML to JSON",
 	"main": "xml2json.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -23,10 +23,11 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@geek/eslint-config": "0.0.7",
-		"eslint": "^5.16.0",
-		"eslint-plugin-import": "^2.17.3",
-		"eslint-plugin-jsdoc": "^7.2.3",
-		"eslint-plugin-promise": "^4.1.1"
+		"eslint": "^6.1.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-jsdoc": "^15.7.2",
+		"eslint-plugin-promise": "^4.2.1",
+		"xmldom": "^0.1.27"
 	},
 	"dependencies": {},
 	"keywords": [
@@ -45,6 +46,6 @@
 		"xmltojson",
 		"xml",
 		"json",
-		"brentonhouse"
+		"brenton-house"
 	]
 }
