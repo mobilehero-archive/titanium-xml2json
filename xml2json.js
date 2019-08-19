@@ -199,6 +199,7 @@ var xmlToJSON = (function () {
 	// Convert xmlDocument to a string
 	// Returns null on failure
 	this.xmlToString = function (xmlDoc) {
+
 		try {
 			var xmlString = xmlDoc.xml ? xmlDoc.xml : Ti.XML.serializeToString(xmlDoc);
 			return xmlString;
@@ -212,8 +213,21 @@ var xmlToJSON = (function () {
 	this.stringToXML = function (xmlString) {
 		try {
 
-			const xmlDoc = Ti.XML.parseString(xmlString);
-			return xmlDoc;
+			if (typeof Ti === 'object') {
+				const xmlDoc = Ti.XML.parseString(xmlString);
+				console.error(xmlDoc);
+				return xmlDoc;
+			} else {
+				const { DOMParser } = require('xmldom');
+				const xmlDoc =  new DOMParser().parseFromString(xmlString, 'text/xml');
+
+				// console.error('xmlDoc: ' + JSON.stringify(xmlDoc, null, 2));
+				return xmlDoc;
+			}
+
+
+			// const xmlDoc = Ti.XML.parseString(xmlString);
+			// return xmlDoc;
 
 			// if (window.DOMParser) {
 
