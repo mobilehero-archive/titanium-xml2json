@@ -1,10 +1,10 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "0.0.6",
+	"version": "0.0.8",
 	"description": "Titanium module for converting XML to JSON",
 	"main": "xml2json.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "npm install --ignore-scripts && npm run list-files",
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"lint": "eslint . --"
 	},
