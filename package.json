@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "npm install --ignore-scripts && npm run list-files",
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"lint": "eslint . --"
+		"lint": "eslint . --",
+		"prepublishOnly": "git pull && bump"
 	},
 	"author": "metatribal",
 	"maintainers": [
