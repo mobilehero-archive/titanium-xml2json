@@ -10,6 +10,7 @@
 # @titanium/xml2json
 
 [![@titanium/xml2json](https://img.shields.io/npm/v/@titanium/xml2json.png)](https://www.npmjs.com/package/@titanium/xml2json)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-xml2json)](https://dependabot.com)
 
 
 > Configurable, lightweight XML to JSON converter for Titanium native mobile apps.  Based on https://github.com/metatribal/xmlToJSON by [metatribal](https://github.com/metatribal)   
