@@ -23,7 +23,7 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@titanium/eslint-config": "0.0.10",
+		"@titanium/eslint-config": "0.0.11",
 		"eslint": "^6.5.1",
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-jsdoc": "^15.12.0",
