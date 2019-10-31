@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"description": "Titanium module for converting XML to JSON",
 	"main": "xml2json.js",
 	"scripts": {
