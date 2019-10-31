@@ -22,7 +22,7 @@ var xmlToJSON = (function () {
 
 	this.version = '1.3.4';
 
-	var options = { // set up the default options
+	const options = { // set up the default options
 		mergeCDATA:      true, // extract cdata and merge with text
 		grokAttr:        true, // convert truthy attributes to boolean, etc
 		grokText:        true, // convert truthy text/attr to boolean, etc
@@ -39,8 +39,8 @@ var xmlToJSON = (function () {
 		childrenAsArray: true, // force children into arrays
 	};
 
-	var prefixMatch = new RegExp(/(?!xmlns)^.*:/);
-	var trimMatch = new RegExp(/^\s+|\s+$/g);
+	const prefixMatch = new RegExp(/(?!xmlns)^.*:/);
+	const trimMatch = new RegExp(/^\s+|\s+$/g);
 
 	this.grokType = function (sValue) {
 		if (/^\s*$/.test(sValue)) {
@@ -62,13 +62,13 @@ var xmlToJSON = (function () {
 	this.parseXML = function (oXMLParent, opt) {
 
 		// initialize options
-		for (var key in opt) {
+		for (const key in opt) {
 			options[key] = opt[key];
 		}
 
-		var vResult = {};
-		var nLength = 0;
-		var sCollectedTxt = '';
+		let vResult = {};
+		let nLength = 0;
+		let sCollectedTxt = '';
 
 		// parse namespace information
 		if (options.xmlns && oXMLParent.namespaceURI) {
@@ -78,12 +78,12 @@ var xmlToJSON = (function () {
 		// parse attributes
 		// using attributes property instead of hasAttributes method to support older browsers
 		if (oXMLParent.attributes && oXMLParent.attributes.length > 0) {
-			var vAttribs = {};
+			const vAttribs = {};
 
 			for (nLength; nLength < oXMLParent.attributes.length; nLength++) {
-				var oAttrib = oXMLParent.attributes.item(nLength);
+				const oAttrib = oXMLParent.attributes.item(nLength);
 				vContent = {};
-				var attribName = '';
+				let attribName = '';
 
 				if (options.stripAttrPrefix) {
 					attribName = oAttrib.name.replace(prefixMatch, '');
@@ -181,7 +181,7 @@ var xmlToJSON = (function () {
 
 		if (sCollectedTxt) {
 			if (options.grokText) {
-				var value = this.grokType(sCollectedTxt.replace(trimMatch, ''));
+				const value = this.grokType(sCollectedTxt.replace(trimMatch, ''));
 				if (value !== null && value !== undefined) {
 					vResult[options.textKey] = value;
 				}
@@ -201,7 +201,7 @@ var xmlToJSON = (function () {
 	this.xmlToString = function (xmlDoc) {
 
 		try {
-			var xmlString = xmlDoc.xml ? xmlDoc.xml : Ti.XML.serializeToString(xmlDoc);
+			const xmlString = xmlDoc.xml ? xmlDoc.xml : Ti.XML.serializeToString(xmlDoc);
 			return xmlString;
 		} catch (err) {
 			return null;
@@ -218,7 +218,7 @@ var xmlToJSON = (function () {
 				console.error(xmlDoc);
 				return xmlDoc;
 			} else {
-				const { DOMParser } = require('xmldom');
+				const { DOMParser } = require('./xmldom');
 				const xmlDoc =  new DOMParser().parseFromString(xmlString, 'text/xml');
 
 				// console.error('xmlDoc: ' + JSON.stringify(xmlDoc, null, 2));
