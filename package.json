@@ -28,7 +28,7 @@
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-jsdoc": "^18.1.5",
 		"eslint-plugin-promise": "^4.2.1",
-		"xmldom": "^0.1.27"
+		"xmldom": "^0.3.0"
 	},
 	"dependencies": {},
 	"keywords": [
