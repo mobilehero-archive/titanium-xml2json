@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "⭐  Axway Amplify module to convert XML to JSON for Appcelerator Titanium apps",
 	"main": "xml2json.js",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
@@ -30,8 +30,7 @@
 		"eslint": "^8.6.0",
 		"eslint-plugin-import": "^2.25.4",
 		"eslint-plugin-jsdoc": "^37.5.1",
-		"eslint-plugin-promise": "^6.0.0",
-		"xmldom": "^0.6.0"
+		"eslint-plugin-promise": "^6.0.0"
 	},
 	"dependencies": {
 		"@geek/logger": "^1.0.17",
