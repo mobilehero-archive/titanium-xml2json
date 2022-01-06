@@ -1,13 +1,16 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "0.0.11",
-	"description": "Titanium module for converting XML to JSON",
+	"version": "1.0.1",
+	"description": "⭐  Axway Amplify module to convert XML to JSON for Appcelerator Titanium apps",
 	"main": "xml2json.js",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"scripts": {
-		"test": "npm install --ignore-scripts && npm run list-files",
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"lint": "eslint . --",
-		"prepublishOnly": "git pull && bump"
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts && npm run list",
+		"test": "npm run prep",
+		"prepublishOnly2": "git pull && npm test && bump insane",
+		"prepublishOnly": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"author": "metatribal",
 	"maintainers": [
@@ -19,18 +22,27 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "github:brentonhouse/titanium-xml2json"
+		"url": "github:mobilehero-archive/titanium-xml2json"
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@titanium/eslint-config": "0.0.11",
-		"eslint": "^6.8.0",
-		"eslint-plugin-import": "^2.18.2",
-		"eslint-plugin-jsdoc": "^18.1.5",
-		"eslint-plugin-promise": "^4.2.1",
-		"xmldom": "^0.1.27"
+		"@titanium/eslint-config": "1.0.8",
+		"eslint": "^8.6.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsdoc": "^37.5.1",
+		"eslint-plugin-promise": "^6.0.0",
+		"xmldom": "^0.6.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@geek/logger": "^1.0.17",
+		"@titanium/bluebird": "^3.7.8",
+		"@titanium/errors": "^1.0.5",
+		"@titanium/essentials": "^1.0.35",
+		"@titanium/jwt": "^1.0.8",
+		"@titanium/module-copier": "^1.0.13",
+		"@titanium/please": "^1.0.16",
+		"@titanium/turbo": "^2.2.22"
+	},
 	"keywords": [
 		"titanium",
 		"mobile",
@@ -47,6 +59,16 @@
 		"xmltojson",
 		"xml",
 		"json",
+		"sdk",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
 		"brenton-house"
 	]
 }
