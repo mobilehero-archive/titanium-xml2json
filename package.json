@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/xml2json",
-	"version": "1.0.31",
+	"version": "1.0.32",
 	"description": "⭐  Axway Amplify module to convert XML to JSON for Appcelerator Titanium apps",
 	"main": "xml2json.js",
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
@@ -28,7 +28,7 @@
 		"@titanium/eslint-config": "1.0.38",
 		"eslint": "^8.7.0",
 		"eslint-plugin-import": "^2.25.4",
-		"eslint-plugin-jsdoc": "^37.6.3",
+		"eslint-plugin-jsdoc": "^37.7.0",
 		"eslint-plugin-promise": "^6.0.0"
 	},
 	"dependencies": {
@@ -48,13 +48,13 @@
 		"@titanium/errors": "^1.0.33",
 		"@titanium/essentials": "^1.0.67",
 		"@titanium/events": "^1.0.44",
-		"@titanium/eventsource": "^1.0.36",
-		"@titanium/jwt": "^1.0.33",
+		"@titanium/eventsource": "^1.0.38",
+		"@titanium/jwt": "^1.0.34",
 		"@titanium/module-copier": "^1.0.42",
-		"@titanium/please": "^1.0.40",
-		"@titanium/polyfill": "^1.0.41",
+		"@titanium/please": "^1.0.42",
+		"@titanium/polyfill": "^1.0.42",
 		"@titanium/querystring": "^1.0.32",
-		"@titanium/tiapp-xml": "^1.0.41",
+		"@titanium/tiapp-xml": "^1.0.42",
 		"@titanium/titanium": "^5.4.40",
 		"@titanium/turbo": "^2.2.59"
 	},
